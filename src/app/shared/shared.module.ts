@@ -6,7 +6,6 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatLegacyListModule as MatListModule } from '@angular/material/legacy-list';
 import { MatLegacyMenuModule as MatMenuModule } from '@angular/material/legacy-menu';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { FlexLayoutModule } from '@angular/flex-layout';
 import { RouterModule } from '@angular/router';
 
 import { HeaderComponent } from './components/header/header.component';
@@ -32,7 +31,6 @@ import { PieComponent } from './widgets/pie/pie.component';
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
-    FlexLayoutModule,
     MatMenuModule,
     MatListModule,
     RouterModule,

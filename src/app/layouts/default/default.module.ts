@@ -10,7 +10,6 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatLegacyPaginatorModule as MatPaginatorModule } from '@angular/material/legacy-paginator';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatLegacyTableModule as MatTableModule } from '@angular/material/legacy-table';
-import { FlexLayoutModule } from '@angular/flex-layout';
 import { DashboardService } from 'src/app/modules/dashboard.service';
 
 @NgModule({
@@ -25,7 +24,6 @@ import { DashboardService } from 'src/app/modules/dashboard.service';
     SharedModule,
     MatSidenavModule,
     MatDividerModule,
-    FlexLayoutModule,
     MatCardModule,
     MatPaginatorModule,
     MatTableModule
