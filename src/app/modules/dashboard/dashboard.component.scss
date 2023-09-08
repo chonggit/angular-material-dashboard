@@ -7,3 +7,29 @@
 table {
   width: 100%;
 }
+
+.row {
+  flex-direction: row;
+  box-sizing: border-box;
+  display: flex;
+  place-content: center space-between;
+  align-items: center;
+}
+
+.w25 {
+  max-width: 25%;
+}
+
+.w40 {
+  max-width: 40%;
+}
+
+.w60 {
+  max-width: 60%;
+}
+
+.column {
+  margin-right: 20px;
+  flex: 1 1 100%;
+  box-sizing: border-box;
+}
