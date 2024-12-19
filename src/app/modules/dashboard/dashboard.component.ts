@@ -1,7 +1,12 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { DashboardService } from '../dashboard.service';
 import { MatPaginator } from '@angular/material/paginator';
-import { MatTableDataSource } from '@angular/material/table';
+import { MatTableDataSource, MatTable, MatColumnDef, MatHeaderCellDef, MatHeaderCell, MatCellDef, MatCell, MatHeaderRowDef, MatHeaderRow, MatRowDef, MatRow } from '@angular/material/table';
+import { AreaComponent } from '../../shared/widgets/area/area.component';
+import { MatDivider } from '@angular/material/divider';
+import { MatCard } from '@angular/material/card';
+import { CardComponent } from '../../shared/widgets/card/card.component';
+import { PieComponent } from '../../shared/widgets/pie/pie.component';
 
 export interface PeriodicElement {
   name: string;
@@ -36,7 +41,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
     selector: 'app-dashboard',
     templateUrl: './dashboard.component.html',
     styleUrls: ['./dashboard.component.scss'],
-    standalone: false
+    imports: [AreaComponent, MatDivider, MatCard, CardComponent, MatTable, MatColumnDef, MatHeaderCellDef, MatHeaderCell, MatCellDef, MatCell, MatHeaderRowDef, MatHeaderRow, MatRowDef, MatRow, MatPaginator, PieComponent]
 })
 export class DashboardComponent implements OnInit {
 

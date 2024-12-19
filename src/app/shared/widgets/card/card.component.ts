@@ -1,12 +1,14 @@
 import { Component, OnInit, Input } from '@angular/core';
 import * as Highcharts from 'highcharts';
 import HC_exporting from 'highcharts/modules/exporting';
+import { MatIcon } from '@angular/material/icon';
+import { HighchartsChartModule } from 'highcharts-angular';
 
 @Component({
     selector: 'app-widget-card',
     templateUrl: './card.component.html',
     styleUrls: ['./card.component.scss'],
-    standalone: false
+    imports: [MatIcon, HighchartsChartModule]
 })
 export class CardComponent implements OnInit {
 

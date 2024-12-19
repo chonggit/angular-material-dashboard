@@ -1,13 +1,14 @@
 import { Component, OnInit, Input } from '@angular/core';
 import * as Highcharts from 'highcharts';
 import HC_exporting from 'highcharts/modules/exporting';
+import { HighchartsChartModule } from 'highcharts-angular';
 
 
 @Component({
     selector: 'app-widget-area',
     templateUrl: './area.component.html',
     styleUrls: ['./area.component.scss'],
-    standalone: false
+    imports: [HighchartsChartModule]
 })
 export class AreaComponent implements OnInit {
 

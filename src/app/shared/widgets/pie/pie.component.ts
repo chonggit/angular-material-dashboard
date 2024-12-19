@@ -1,12 +1,13 @@
 import { Component, OnInit, Input } from '@angular/core';
 import * as Highcharts from 'highcharts';
 import HC_exporting from 'highcharts/modules/exporting';
+import { HighchartsChartModule } from 'highcharts-angular';
 
 @Component({
     selector: 'app-widget-pie',
     templateUrl: './pie.component.html',
     styleUrls: ['./pie.component.scss'],
-    standalone: false
+    imports: [HighchartsChartModule]
 })
 export class PieComponent implements OnInit {
 
